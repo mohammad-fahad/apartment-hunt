@@ -8,9 +8,11 @@ import image6 from '../../images/Rectangle 404.png';
 import bed from '../../logos/bed 1.png';
 import bath from '../../logos/bath 1.png';
 import mark from '../../logos/map-marker-alt-solid 1.png';
+import { Link } from 'react-router-dom';
 
 const data = [
     {
+        id: 1,
         image: image1,
         title: 'Washington Avenue',
         location: 'Nasirabad H/S, Chattragram',
@@ -22,6 +24,7 @@ const data = [
 
     },
     {
+        id: 2,
         image: image2,
         title: 'Family Apartment Three',
         location: 'Nasirabad H/S, Chattragram',
@@ -33,6 +36,7 @@ const data = [
 
     },
     {
+        id: 3,
         image: image3,
         title: 'Gorgeous house',
         location: 'Nasirabad H/S, Chattragram',
@@ -44,6 +48,7 @@ const data = [
 
     },
     {
+        id: 4,
         image: image4,
         title: 'Luxury villa',
         location: 'Nasirabad H/S, Chattragram',
@@ -55,6 +60,7 @@ const data = [
 
     },
     {
+        id: 5,
         image: image5,
         title: 'Epic Huda Palacio',
         location: 'Nasirabad H/S, Chattragram',
@@ -66,6 +72,7 @@ const data = [
 
     },
     {
+        id: 6,
         image: image6,
         title: 'Washington Avenue',
         location: 'Nasirabad H/S, Chattragram',
@@ -109,7 +116,7 @@ const Body = () => {
                                 </div>
                                 <div className='d-flex'>
                                     <h1 className='price'><strong>$ {d.Price}</strong></h1>
-                                    <button className="btn ml-auto"><strong>View Details</strong></button>
+                                    <Link to={'/apartment/' + d.id} className="btn ml-auto align-items-center py-3"><strong>View Details</strong></Link>
                                 </div>
                             </div>
                         </div>
