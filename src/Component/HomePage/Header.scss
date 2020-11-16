@@ -9,6 +9,7 @@ $mute: #6D6F74;
 %button-shared {
   background-color:$buttonColor;
   color: $textColor; 
+  border: none;
 }
 
 
@@ -17,7 +18,7 @@ $mute: #6D6F74;
   background-repeat: no-repeat;
   background-position: bottom center; 
 //   background-attachment: fixed;
-  height: 600px;
+  height: 400px;
   background-size: cover;
     
 }

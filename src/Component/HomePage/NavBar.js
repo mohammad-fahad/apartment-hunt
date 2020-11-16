@@ -5,7 +5,7 @@ import logo from '../../logos/Logo.png';
 const NavBar = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light" >
                 <img src={logo} alt="" className="img-fluid ml-5" style={{ height: '8vh' }} />
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

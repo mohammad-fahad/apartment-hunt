@@ -110,7 +110,7 @@ const Login = () => {
         <>
             <NavBar />
             <div className="form_wrapper mt-5">
-                <div className='container pt-5'>
+                <div className='container container-fluid pt-5'>
                     <div className="row d-flex align-items-center pt-5">
                         <div className="col-md-6 offset-3">
                             <Form className='loginFrom' onSubmit={handleSubmit}>

@@ -7,6 +7,7 @@ import {
 import Home from './Component/HomePage/Home';
 import { createContext, useState } from 'react';
 import Login from './Component/HomePage/Login/Login';
+import Apartment from './Component/HomePage/Apartmetn/Apartment';
 
 export const userContext = createContext();
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/apartment/:houseId">
+            <Apartment />
           </Route>
         </Switch>
 
