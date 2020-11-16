@@ -1,14 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useHistory, useLocation } from 'react-router-dom';
-import NavBar from '../NavBar';
+import NavBar from '../../HomePage/NavBar';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebaseConfig';
-import { userContext } from '../../../App';
 import './Login.scss';
 import google from '../../../logos/Group 573.png';
 import fb from '../../../logos/Group 2.png';
+import { userContext } from '../../../App';
 
 const Login = () => {
     const [user, setUser] = useContext(userContext);
