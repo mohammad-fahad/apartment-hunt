@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { userContext } from '../../App';
 import logo from '../../logos/Logo.png';
 
 const NavBar = () => {
+    const [user] = useContext(userContext);
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light" >
@@ -34,7 +36,7 @@ const NavBar = () => {
                             <Link to='/contact' className="nav-link"><strong>Contact</strong></Link>
                         </li>
                     </ul>
-                    <Link to="/login"><button className='pr-4 pl-4 btn btn-success mr-5'><strong>Login</strong></button></Link>
+                    <Link to={user ? '/admin' : '/login'}><button className='pr-4 pl-4 btn btn-success mr-5'><strong>Login</strong></button></Link>
                 </div>
             </nav>
         </div>
