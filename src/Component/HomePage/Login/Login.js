@@ -156,12 +156,12 @@ const Login = () => {
                                 <div className='fbToGoogle'>
 
                                     <div className='google btn d-flex justify-content-center align-items-center py-2' onClick={fbLogIn}>
-                                        <img src={google} className='mr-5' style={{ height: '2rem' }} alt="" />
+                                        <img src={fb} className='mr-5' style={{ height: '2rem' }} alt="" />
                                         <h6>Continue with Facebook</h6>
                                     </div> <br />
 
                                     <div className='facebook btn d-flex justify-content-center align-items-center py-2' onClick={googleLogIn}>
-                                        <img src={fb} className="mr-5" style={{ height: '2rem' }} alt="" />
+                                        <img src={google} className="mr-5" style={{ height: '2rem' }} alt="" />
                                         <h6>Continue with Google</h6>
                                     </div>
                                 </div>
