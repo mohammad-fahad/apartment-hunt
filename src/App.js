@@ -8,8 +8,10 @@ import Home from './Component/HomePage/Home';
 import { createContext, useState } from 'react';
 import Login from './Component/HomePage/Login/Login';
 import Apartment from './Component/HomePage/Apartmetn/Apartment';
+import { createStore } from 'redux';
 
 export const userContext = createContext();
+// const store = createStore(rducer);
 
 function App() {
   const [user, setUser] = useState({
