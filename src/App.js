@@ -12,6 +12,7 @@ import { createStore } from 'redux';
 import allReducers from './Reducer/CombineReducer';
 import { Provider } from 'react-redux';
 import Dashboard from './Component/Dashboard/Dashboard';
+import PrivateRoute from './Component/HomePage/Login/PrivateRoute';
 
 
 export const userContext = createContext();
@@ -41,9 +42,9 @@ function App() {
             <Route path="/apartment/:apartmentId">
               <Apartment />
             </Route>
-            <Route path="/admin">
+            <PrivateRoute path="/admin">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
           </Switch>
 
         </Router>

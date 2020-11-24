@@ -4,7 +4,8 @@ import spinner from '../../logos/spinner.gif';
 import { faBath, faBed, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Body = () => {
+const Body = ({ search }) => {
+    console.log(search);
 
     const [apartments, setApartments] = useState([])
     useEffect(() => {
@@ -20,7 +21,7 @@ const Body = () => {
             { !apartments.length && <img className='d-block mx-auto' src={spinner} alt="" />}
             <div className='d-flex flex-wrap justify-content-center'>
                 {
-                    apartments.map(apartment =>
+                    apartments.filter(apartment => apartment.title.toLowerCase().includes(search.trim())).map(apartment =>
                         <div className="card m-5" style={{ width: '25rem', border: 'none' }}>
                             <img src={`data:image/png;base64,${apartment.image.img}`} className="card-img-top" alt="..." />
                             <div className="card-body">
@@ -29,7 +30,6 @@ const Body = () => {
                                     <div className='d-flex align-items-center mb-1'>
                                         <h5 className="card-text my-1 text"><FontAwesomeIcon icon={faMapMarkerAlt} /> {apartment.location}</h5>
                                     </div>
-
                                 </div>
                                 <div className="d-flex mb-3">
                                     <div className="d-flex text-left">

@@ -16,7 +16,7 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active mr-5">
-                            <Link to='/' className="nav-link"><strong>Home</strong></Link>
+                            <Link to='/' onClick={() => window.location.reload()} className="nav-link"><strong>Home</strong></Link>
                         </li>
                         <li className="nav-item active mr-5">
                             <Link to='/about' className="nav-link"><strong>About</strong></Link>
