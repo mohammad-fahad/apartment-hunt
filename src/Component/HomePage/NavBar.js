@@ -19,21 +19,21 @@ const NavBar = () => {
                             <Link to='/' onClick={() => window.location.reload()} className="nav-link"><strong>Home</strong></Link>
                         </li>
                         <li className="nav-item active mr-5">
-                            <Link to='/about' className="nav-link"><strong>About</strong></Link>
+                            <Link to='/' className="nav-link"><strong>About</strong></Link>
                         </li>
 
                         <li className="nav-item active mr-5">
-                            <Link to='/service' className="nav-link"><strong>Service</strong></Link>
+                            <Link to='/' className="nav-link"><strong>Service</strong></Link>
                         </li>
                         <li className="nav-item active mr-5">
-                            <Link to='/concerns' className="nav-link"><strong>Concerns</strong> </Link>
+                            <Link to='/' className="nav-link"><strong>Concerns</strong> </Link>
                         </li>
                         <li className="nav-item active mr-5">
-                            <Link to='/events' className="nav-link"><strong>Events</strong></Link>
+                            <Link to='/' className="nav-link"><strong>Events</strong></Link>
                         </li>
 
                         <li className="nav-item active mr-5">
-                            <Link to='/contact' className="nav-link"><strong>Contact</strong></Link>
+                            <Link to='/' className="nav-link"><strong>Contact</strong></Link>
                         </li>
                     </ul>
                     <Link to={user ? '/admin' : '/login'}><button className='pr-4 pl-4 btn btn-success mr-5'><strong>Login</strong></button></Link>
